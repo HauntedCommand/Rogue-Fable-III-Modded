@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://v6p9d9t4.ssl.hwcdn.net/html/1226229/rogue-fable-III/index.html?v=1574336151 -->
+<html lang="en">
+
+header("Access-Control-Allow-Origin:*");
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        
+        p {
+            font-family: 'silkscreennormal';
+            src: url('assets/font/silkscreennormal.ttf');
+            format("truetype");
+        }
+    </style>
+
+    <link rel="stylesheet" href="./Rogue Fable III_files/stylesheet.css" type="text/css" charset="utf-8">
+
+
+
+    <title>Rogue Fable III</title>
+
+
+</head>
+
+<body style="background-color:#222222">
+    <div id="gameDiv"> <canvas width="1024" height="700" style="display: block; touch-action: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 1024px; height: 700px; image-rendering: pixelated;"></canvas></div>
+
+
+    <script src="./Rogue Fable III_files/kongregate_api.js"></script>
+
+    <!-- Main: -->
+    <script src="./Rogue Fable III_files/phaser.min.js"></script>
+    <script src="./Rogue Fable III_files/lz-string.min.js"></script>
+    <script src="./Rogue Fable III_files/constants.js"></script>
+    <script src="./Rogue Fable III_files/loader.js"></script>
+    <script src="./Rogue Fable III_files/gam    e.js"></script>
+    <script src="./Rogue Fable III_files/help.js"></script>
+    <script src="./Rogue Fable III_files/debug.js"></script>
+    <script src="./Rogue Fable III_files/metric.js"></script>
+    <script src="./Rogue Fable III_files/utility.js"></script>
+    <script src="./Rogue Fable III_files/debug-properties.js"></script>
+    <script src="./Rogue Fable III_files/event-log.js"></script>
+    <script src="./Rogue Fable III_files/game-record.js"></script>
+    <script src="./Rogue Fable III_files/stats.js"></script>
+
+    <!-- Main Menu: -->
+    <script src="./Rogue Fable III_files/menu-states.js"></script>
+    <script src="./Rogue Fable III_files/class-select-menu.js"></script>
+    <script src="./Rogue Fable III_files/race-select-menu.js"></script>
+    <script src="./Rogue Fable III_files/trailer-state.js"></script>
+
+    <!-- Level: -->
+    <script src="./Rogue Fable III_files/area.js"></script>
+    <script src="./Rogue Fable III_files/tile-map.js"></script>
+    <script src="./Rogue Fable III_files/pathfinding.js"></script>
+    <script src="./Rogue Fable III_files/tile-map-display.js"></script>
+    <script src="./Rogue Fable III_files/level.js"></script>
+    <script src="./Rogue Fable III_files/level-io.js"></script>
+    <script src="./Rogue Fable III_files/zone-type.js"></script>
+    <script src="./Rogue Fable III_files/spawn-tables.js"></script>
+    <script src="./Rogue Fable III_files/level-dressing.js"></script>
+    <script src="./Rogue Fable III_files/level-filler.js"></script>
+    <script src="./Rogue Fable III_files/vault-type.js"></script>
+    <script src="./Rogue Fable III_files/frame-selector.js"></script>
+    <script src="./Rogue Fable III_files/level-generate.js"></script>
+    <script src="./Rogue Fable III_files/level-controller.js"></script>
+    <script src="./Rogue Fable III_files/level-verification.js"></script>
+
+    <!-- Generators: -->
+    <script src="./Rogue Fable III_files/feature-generator.js"></script>
+    <script src="./Rogue Fable III_files/room-generator.js"></script>
+    <script src="./Rogue Fable III_files/generator-base.js"></script>
+    <script src="./Rogue Fable III_files/generator-rogue.js"></script>
+    <script src="./Rogue Fable III_files/generator-sewer-roads.js"></script>
+    <script src="./Rogue Fable III_files/generator-bsp.js"></script>
+    <script src="./Rogue Fable III_files/generator-cave.js"></script>
+    <script src="./Rogue Fable III_files/generator-cave2.js"></script>
+    <script src="./Rogue Fable III_files/generator-sewer-tunnels.js"></script>
+    <script src="./Rogue Fable III_files/generator-arcane.js"></script>
+    <script src="./Rogue Fable III_files/generator-crypt.js"></script>
+    <script src="./Rogue Fable III_files/generator-cycle.js"></script>
+    <script src="./Rogue Fable III_files/generator-swamp.js"></script>
+    <script src="./Rogue Fable III_files/generator-cave-room.js"></script>
+    <script src="./Rogue Fable III_files/generator-ring.js"></script>
+    <script src="./Rogue Fable III_files/generator-lair.js"></script>
+    <script src="./Rogue Fable III_files/generator-feast-hall.js"></script>
+    <script src="./Rogue Fable III_files/generate-global-stuff.js"></script>
+
+    <!-- Characters: -->
+    <script src="./Rogue Fable III_files/character.js"></script>
+    <script src="./Rogue Fable III_files/npc-type.js"></script>
+    <script src="./Rogue Fable III_files/npc.js"></script>
+    <script src="./Rogue Fable III_files/npc-controller.js"></script>
+    <script src="./Rogue Fable III_files/player.js"></script>
+    <script src="./Rogue Fable III_files/player-input.js"></script>
+    <script src="./Rogue Fable III_files/player-class.js"></script>
+    <script src="./Rogue Fable III_files/player-race.js"></script>
+    <script src="./Rogue Fable III_files/character-inventory.js"></script>
+    <script src="./Rogue Fable III_files/unique-npc.js"></script>
+    <script src="./Rogue Fable III_files/character-stats.js"></script>
+    <script src="./Rogue Fable III_files/character-body.js"></script>
+
+    <!-- Abilities: -->
+    <script src="./Rogue Fable III_files/ability.js"></script>
+    <script src="./Rogue Fable III_files/player-ability-type.js"></script>
+    <script src="./Rogue Fable III_files/npc-ability-type.js"></script>
+    <script src="./Rogue Fable III_files/ability-helpers.js"></script>
+    <script src="./Rogue Fable III_files/talent.js"></script>
+    <script src="./Rogue Fable III_files/status-effect.js"></script>
+    <script src="./Rogue Fable III_files/status-effect-type.js"></script>
+    <script src="./Rogue Fable III_files/religion.js"></script>
+
+    <!-- Entities -->
+    <script src="./Rogue Fable III_files/projectile-type.js"></script>
+    <script src="./Rogue Fable III_files/projectile.js"></script>
+    <script src="./Rogue Fable III_files/particle.js"></script>
+    <script src="./Rogue Fable III_files/effect.js"></script>
+    <script src="./Rogue Fable III_files/cloud.js"></script>
+    <script src="./Rogue Fable III_files/object-type.js"></script>
+    <script src="./Rogue Fable III_files/object.js"></script>
+    <script src="./Rogue Fable III_files/lighting.js"></script>
+
+    <!-- Item: -->
+    <script src="./Rogue Fable III_files/item-effects.js"></script>
+    <script src="./Rogue Fable III_files/item-type.js"></script>
+    <script src="./Rogue Fable III_files/item.js"></script>
+    <script src="./Rogue Fable III_files/floor-item.js"></script>
+    <script src="./Rogue Fable III_files/item-slot.js"></script>
+    <script src="./Rogue Fable III_files/item-slot-list.js"></script>
+    <script src="./Rogue Fable III_files/item-drop-tables.js"></script>
+
+    <!-- Interface: -->
+    <script src="./Rogue Fable III_files/ui-hud.js"></script>
+    <script src="./Rogue Fable III_files/ui-menu-stack.js"></script>
+    <script src="./Rogue Fable III_files/ui-item-slot.js"></script>
+    <script src="./Rogue Fable III_files/ui-item-slot-list.js"></script>
+    <script src="./Rogue Fable III_files/ui-map.js"></script>
+    <script src="./Rogue Fable III_files/ui-character-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-options-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-shop-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-dialog-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-ability-bar.js"></script>
+    <script src="./Rogue Fable III_files/ui-hud-sprites.js"></script>
+    <script src="./Rogue Fable III_files/ui-enchantment-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-acquirement-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-transferance-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-text-button-list.js"></script>
+    <script src="./Rogue Fable III_files/ui-help-menu.js"></script>
+    <script src="./Rogue Fable III_files/ui-record-menu.js"></script>
+
+    <script defer="" src="./Rogue Fable III_files/htmlgame.js" type="text/javascript"></script>
+</body>
+
+</html>
