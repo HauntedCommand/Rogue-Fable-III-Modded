@@ -90,7 +90,7 @@ gs.loadVaults = function () {
         IglooRoom:          {isFloatingFeature: true},
 		
 		// Feast Hall:
-		FeastHallMain01:	{path: 'assets/maps/vaults/FeastHall/Hall01.json'},
+		FeastHallMain01:	{path: 'Rogue Fable III_files/assets/maps/vaults/FeastHall/Hall01.json'},
 
 	};
 	
@@ -101,10 +101,10 @@ gs.loadVaults = function () {
 			game.load.json(vaultType.name, vaultType.path);
 		}
 		else if (vaultType.isFloatingFeature) {
-			game.load.json(vaultType.name, 'assets/maps/floating-features/' + vaultType.name + '.json');
+			game.load.json(vaultType.name, 'Rogue Fable III_files/assets/maps/floating-features/' + vaultType.name + '.json');
 		}
 		else {
-			game.load.json(vaultType.name, 'assets/maps/vaults/' + vaultType.name + '.json');
+			game.load.json(vaultType.name, 'Rogue Fable III_files/assets/maps/vaults/' + vaultType.name + '.json');
 		}
 		
 		
