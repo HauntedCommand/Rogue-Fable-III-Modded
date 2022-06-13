@@ -100,120 +100,120 @@ loader.create = function() {
     //game.load.bitmapFont('Silkscreen', 'assets/fonts/silkscreen.png', 'assets/fonts/silkscreen.fnt');
 
     // Load stuff here:
-    game.load.image('Title', './assets/images/Title.png');
-    game.load.spritesheet('Tileset', './assets/images/Tileset.png', TILE_SIZE / SCALE_FACTOR, TILE_SIZE / SCALE_FACTOR);
-    game.load.spritesheet('MapTileset', './assets/images/MapTileset.png', TILE_SIZE / SCALE_FACTOR, 2 * TILE_SIZE / SCALE_FACTOR);
-    game.load.spritesheet('EffectsTileset', './assets/images/EffectsTileset.png', 2 * TILE_SIZE / SCALE_FACTOR, 2 * TILE_SIZE / SCALE_FACTOR);
+    game.load.image('Title', 'Rogue Fable III_files/assets/images/Title.png');
+    game.load.spritesheet('Tileset', 'Rogue Fable III_files/assets/images/Tileset.png', TILE_SIZE / SCALE_FACTOR, TILE_SIZE / SCALE_FACTOR);
+    game.load.spritesheet('MapTileset', 'Rogue Fable III_files/assets/images/MapTileset.png', TILE_SIZE / SCALE_FACTOR, 2 * TILE_SIZE / SCALE_FACTOR);
+    game.load.spritesheet('EffectsTileset', 'Rogue Fable III_files/assets/images/EffectsTileset.png', 2 * TILE_SIZE / SCALE_FACTOR, 2 * TILE_SIZE / SCALE_FACTOR);
 
     // HUD:
-    game.load.image('Menu', './assets/images/Menu.png');
+    game.load.image('Menu', 'Rogue Fable III_files/assets/images/Menu.png');
 
     if (WIDE_SCREEN) {
-        game.load.spritesheet('HUD', './assets/images/HUD-Wide.png', 640, 360);
+        game.load.spritesheet('HUD', 'Rogue Fable III_files/assets/images/HUD-Wide.png', 640, 360);
     } else {
-        game.load.spritesheet('HUD', './assets/images/HUD.png', 512, 350);
+        game.load.spritesheet('HUD', 'Rogue Fable III_files/assets/images/HUD.png', 512, 350);
     }
 
-    game.load.image('Bar', './assets/images/Bar.png');
-    game.load.spritesheet('Button', './assets/images/Button.png', 100, 12);
-    game.load.spritesheet('TextBox', './assets/images/TextBox.png', 240, 8);
-    game.load.image('MiniMap', './assets/images/MiniMap.png');
-    game.load.image('SmallMenu', './assets/images/SmallMenu.png');
-    game.load.spritesheet('BigSlot', './assets/images/BigSlot.png', 24, 24);
+    game.load.image('Bar', 'Rogue Fable III_files/assets/images/Bar.png');
+    game.load.spritesheet('Button', 'Rogue Fable III_files/assets/images/Button.png', 100, 12);
+    game.load.spritesheet('TextBox', 'Rogue Fable III_files/assets/images/TextBox.png', 240, 8);
+    game.load.image('MiniMap', 'Rogue Fable III_files/assets/images/MiniMap.png');
+    game.load.image('SmallMenu', 'Rogue Fable III_files/assets/images/SmallMenu.png');
+    game.load.spritesheet('BigSlot', 'Rogue Fable III_files/assets/images/BigSlot.png', 24, 24);
 
     // STATIC_LEVELS_JSON:
-    game.load.json('TestLevel', './assets/maps/StaticLevels/TestLevel.json');
+    game.load.json('TestLevel', 'Rogue Fable III_filesassets/maps/StaticLevels/TestLevel.json');
 
     // THE_UPPER_DUNGEON:
-    game.load.json('TheUpperDungeon-01', './assets/maps/StaticLevels/TheUpperDungeon-01.json');
-    game.load.json('TheUpperDungeon-02', './assets/maps/StaticLevels/TheUpperDungeon-02.json');
-    game.load.json('TheUpperDungeon-03', './assets/maps/StaticLevels/TheUpperDungeon-03.json');
-    game.load.json('TheUpperDungeon-04', './assets/maps/StaticLevels/TheUpperDungeon-04.json');
-    game.load.json('TheUpperDungeon-OrcEntrance01', './assets/maps/StaticLevels/TheUpperDungeon-OrcEntrance01.json');
+    game.load.json('TheUpperDungeon-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUpperDungeon-01.json');
+    game.load.json('TheUpperDungeon-02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUpperDungeon-02.json');
+    game.load.json('TheUpperDungeon-03', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUpperDungeon-03.json');
+    game.load.json('TheUpperDungeon-04', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUpperDungeon-04.json');
+    game.load.json('TheUpperDungeon-OrcEntrance01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUpperDungeon-OrcEntrance01.json');
 
     // THE_ORC_FORTRESS:
-    game.load.json('TheOrcFortress-01', './assets/maps/StaticLevels/TheOrcFortress-01.json');
-    game.load.json('TheOrcFortress-02', './assets/maps/StaticLevels/TheOrcFortress-02.json');
-    game.load.json('TheOrcFortress-03', './assets/maps/StaticLevels/TheOrcFortress-03.json');
+    game.load.json('TheOrcFortress-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheOrcFortress-01.json');
+    game.load.json('TheOrcFortress-02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheOrcFortress-02.json');
+    game.load.json('TheOrcFortress-03', 'Rogue Fable III_files/assets/maps/StaticLevels/TheOrcFortress-03.json');
 
     // THE_IRON_FORTRESS:
-    game.load.json('TheIronFortress-01', './assets/maps/StaticLevels/TheIronFortress-01.json');
-    game.load.json('TheIronFortress-02', './assets/maps/StaticLevels/TheIronFortress-02.json');
+    game.load.json('TheIronFortress-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheIronFortress-01.json');
+    game.load.json('TheIronFortress-02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheIronFortress-02.json');
 
     // THE_UNDER_GROVE:
-    game.load.json('TheUnderGrove-01', './assets/maps/StaticLevels/TheUnderGrove-01.json');
-    game.load.json('TheUnderGrove-02', './assets/maps/StaticLevels/TheUnderGrove-02.json');
+    game.load.json('TheUnderGrove-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUnderGrove-01.json');
+    game.load.json('TheUnderGrove-02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUnderGrove-02.json');
 
     // THE_DARK_TEMPLE:
-    game.load.json('TheDarkTemple-01', './assets/maps/StaticLevels/TheDarkTemple-01.json');
-    game.load.json('TheDarkTemple-02', './assets/maps/StaticLevels/TheDarkTemple-02.json');
+    game.load.json('TheDarkTemple-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheDarkTemple-01.json');
+    game.load.json('TheDarkTemple-02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheDarkTemple-02.json');
 
     // THE_CORE::
-    game.load.json('TheCore-01', './assets/maps/StaticLevels/TheCore-01.json');
-    game.load.json('TheCore-EndLevel01', './assets/maps/StaticLevels/TheCore-EndLevel01.json');
-    game.load.json('TheCore-EndLevel02', './assets/maps/StaticLevels/TheCore-EndLevel02.json');
+    game.load.json('TheCore-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheCore-01.json');
+    game.load.json('TheCore-EndLevel01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheCore-EndLevel01.json');
+    game.load.json('TheCore-EndLevel02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheCore-EndLevel02.json');
 
     // THE_ICE_CAVES:
-    game.load.json('TheIceCaves-01', './assets/maps/StaticLevels/TheIceCaves-01.json');
-    game.load.json('TheIceCaves-EndLevel01', './assets/maps/StaticLevels/TheIceCaves-EndLevel01.json');
-    game.load.json('TheIceCaves-EndLevel02', './assets/maps/StaticLevels/TheIceCaves-EndLevel02.json');
+    game.load.json('TheIceCaves-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheIceCaves-01.json');
+    game.load.json('TheIceCaves-EndLevel01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheIceCaves-EndLevel01.json');
+    game.load.json('TheIceCaves-EndLevel02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheIceCaves-EndLevel02.json');
 
     // THE_SEWERS:
-    game.load.json('TheSewers-01', './assets/maps/StaticLevels/TheSewers-01.json');
-    game.load.json('TheSewers-EndLevel01', './assets/maps/StaticLevels/TheSewers-EndLevel01.json');
-    game.load.json('TheSewers-EndLevel02', './assets/maps/StaticLevels/TheSewers-EndLevel02.json');
+    game.load.json('TheSewers-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheSewers-01.json');
+    game.load.json('TheSewers-EndLevel01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheSewers-EndLevel01.json');
+    game.load.json('TheSewers-EndLevel02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheSewers-EndLevel02.json');
 
     // THE_ARCANE_TOWER:
-    game.load.json('TheArcaneTower-EndLevel01', './assets/maps/StaticLevels/TheArcaneTower-EndLevel01.json');
-    game.load.json('TheArcaneTower-EndLevel02', './assets/maps/StaticLevels/TheArcaneTower-EndLevel02.json');
+    game.load.json('TheArcaneTower-EndLevel01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheArcaneTower-EndLevel01.json');
+    game.load.json('TheArcaneTower-EndLevel02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheArcaneTower-EndLevel02.json');
 
     // THE_CRYPT:
-    game.load.json('TheCrypt-01', './assets/maps/StaticLevels/TheCrypt-01.json');
-    game.load.json('TheCrypt-02', './assets/maps/StaticLevels/TheCrypt-02.json');
+    game.load.json('TheCrypt-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheCrypt-01.json');
+    game.load.json('TheCrypt-02', 'Rogue Fable III_files/assets/maps/StaticLevels/TheCrypt-02.json');
 
     // VAULT_OF_YENDOR:
-    game.load.json('VaultOfYendor-EndLevel01', './assets/maps/StaticLevels/VaultOfYendor-EndLevel01.json');
-    game.load.json('VaultOfYendor-EndLevel02', './assets/maps/StaticLevels/VaultOfYendor-EndLevel02.json');
+    game.load.json('VaultOfYendor-EndLevel01', 'Rogue Fable III_files/assets/maps/StaticLevels/VaultOfYendor-EndLevel01.json');
+    game.load.json('VaultOfYendor-EndLevel02', 'Rogue Fable III_files/assets/maps/StaticLevels/VaultOfYendor-EndLevel02.json');
 
     // VAULT_JSON:
     gs.loadVaults();
 
 
     // SOUNDS:
-    game.load.audio('Armor', './assets/audio/Armor.ogg');
-    game.load.audio('Weapon', './assets/audio/Weapon.ogg');
-    game.load.audio('Potion', './assets/audio/Potion.ogg');
-    game.load.audio('Scroll', './assets/audio/Scroll.ogg');
-    game.load.audio('Coin', './assets/audio/Coin.ogg');
-    game.load.audio('Door', './assets/audio/Door.ogg');
-    game.load.audio('Fire', './assets/audio/Fire.ogg');
-    game.load.audio('Ice', './assets/audio/Ice.ogg');
-    game.load.audio('Melee', './assets/audio/Melee.ogg');
-    game.load.audio('Throw', './assets/audio/Throw.ogg');
-    game.load.audio('Point', './assets/audio/Point.ogg');
-    game.load.audio('PlayerHit', './assets/audio/PlayerHit.ogg');
-    game.load.audio('Book', './assets/audio/Book.ogg');
-    game.load.audio('Food', './assets/audio/Food.ogg');
-    game.load.audio('LevelUp', './assets/audio/LevelUp.ogg');
-    game.load.audio('Shock', './assets/audio/Shock.ogg');
-    game.load.audio('Spell', './assets/audio/Spell.ogg');
-    game.load.audio('Cure', './assets/audio/Cure.ogg');
-    game.load.audio('UIClick', './assets/audio/UIClick.ogg');
-    game.load.audio('Death', './assets/audio/Death.ogg');
-    game.load.audio('Explosion', './assets/audio/Explosion.ogg');
-    game.load.audio('Bolt', './assets/audio/Bolt.ogg');
-    game.load.audio('Jewlery', './assets/audio/Jewlery.ogg');
-    game.load.audio('Teleport', './assets/audio/Teleport.ogg');
-    game.load.audio('PitTrap', './assets/audio/PitTrap.ogg');
+    game.load.audio('Armor', 'Rogue Fable III_files/assets/audio/Armor.ogg');
+    game.load.audio('Weapon', 'Rogue Fable III_files/assets/audio/Weapon.ogg');
+    game.load.audio('Potion', 'Rogue Fable III_files/assets/audio/Potion.ogg');
+    game.load.audio('Scroll', 'Rogue Fable III_files/assets/audio/Scroll.ogg');
+    game.load.audio('Coin', 'Rogue Fable III_files/assets/audio/Coin.ogg');
+    game.load.audio('Door', 'Rogue Fable III_files/assets/audio/Door.ogg');
+    game.load.audio('Fire', 'Rogue Fable III_files/assets/audio/Fire.ogg');
+    game.load.audio('Ice', 'Rogue Fable III_files/assets/audio/Ice.ogg');
+    game.load.audio('Melee', 'Rogue Fable III_files/assets/audio/Melee.ogg');
+    game.load.audio('Throw', 'Rogue Fable III_files/assets/audio/Throw.ogg');
+    game.load.audio('Point', 'Rogue Fable III_files/assets/audio/Point.ogg');
+    game.load.audio('PlayerHit', 'Rogue Fable III_files/assets/audio/PlayerHit.ogg');
+    game.load.audio('Book', 'Rogue Fable III_files/assets/audio/Book.ogg');
+    game.load.audio('Food', 'Rogue Fable III_files/assets/audio/Food.ogg');
+    game.load.audio('LevelUp', 'Rogue Fable III_files/assets/audio/LevelUp.ogg');
+    game.load.audio('Shock', 'Rogue Fable III_files/assets/audio/Shock.ogg');
+    game.load.audio('Spell', 'Rogue Fable III_files/assets/audio/Spell.ogg');
+    game.load.audio('Cure', 'Rogue Fable III_files/assets/audio/Cure.ogg');
+    game.load.audio('UIClick', 'Rogue Fable III_files/assets/audio/UIClick.ogg');
+    game.load.audio('Death', 'Rogue Fable III_files/assets/audio/Death.ogg');
+    game.load.audio('Explosion', 'Rogue Fable III_files/assets/audio/Explosion.ogg');
+    game.load.audio('Bolt', 'Rogue Fable III_files/assets/audio/Bolt.ogg');
+    game.load.audio('Jewlery', 'Rogue Fable III_files/assets/audio/Jewlery.ogg');
+    game.load.audio('Teleport', 'Rogue Fable III_files/assets/audio/Teleport.ogg');
+    game.load.audio('PitTrap', 'Rogue Fable III_files/assets/audio/PitTrap.ogg');
 
     // Music:
-    game.load.audio('MainMenu', './assets/music/MainMenu.mp3');
-    game.load.audio('MainDungeon', './assets/music/MainDungeon.mp3');
-    game.load.audio('TheUnderGrove', './assets/music/UnderGrove.mp3');
-    game.load.audio('TheIronFortress', './assets/music/TheIronFortress.mp3');
-    game.load.audio('TheCrypt', './assets/music/TheCrypt.mp3');
-    game.load.audio('TheCore', './assets/music/TheCore.mp3');
-    game.load.audio('TheIceCaves', './assets/music/TheIceCaves.mp3');
+    game.load.audio('MainMenu', 'Rogue Fable III_files/assets/music/MainMenu.mp3');
+    game.load.audio('MainDungeon', 'Rogue Fable III_files/assets/music/MainDungeon.mp3');
+    game.load.audio('TheUnderGrove', 'Rogue Fable III_files/assets/music/UnderGrove.mp3');
+    game.load.audio('TheIronFortress', 'Rogue Fable III_files/assets/music/TheIronFortress.mp3');
+    game.load.audio('TheCrypt', 'Rogue Fable III_files/assets/music/TheCrypt.mp3');
+    game.load.audio('TheCore', 'Rogue Fable III_files/assets/music/TheCore.mp3');
+    game.load.audio('TheIceCaves', 'Rogue Fable III_files/assets/music/TheIceCaves.mp3');
 
     game.load.start();
 };
