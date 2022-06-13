@@ -150,12 +150,12 @@ var SAVE_AMMO_PER_SKILL = 0.01;
 var ITEM_ABILITY_MULTIPLIER_PER_LEVEL = 0.15;
 
 
-var EVASION_PERCENT_PER_POINT = 0.05;
+var EVASION_PERCENT_PER_POINT = 0.10;
 var MAX_EVASION_PERCENT = 0.75;
 
-var REFLECTION_PERCENT_PER_POINT = 0.05;
+var REFLECTION_PERCENT_PER_POINT = 0.10;
 var MAX_REFLECTION_PERCENT = 0.75;
-var CRIT_PERCENT_PER_STEALTH = 0.05;
+var CRIT_PERCENT_PER_STEALTH = 0.10;
 
 // SKILLS:
 // ************************************************************************************************
@@ -207,12 +207,12 @@ var NPC_DAMAGE_PER_LEVEL = {
 
 
 
-var NPC_COMMON_PERCENT = 70;
-var NPC_UNCOMMON_PERCENT = 25;
-var NPC_RARE_PERCENT  = 5;
+var NPC_COMMON_PERCENT = 35;
+var NPC_UNCOMMON_PERCENT = 50;
+var NPC_RARE_PERCENT  = 15;
 var SPAWN_ENEMY_TURNS = 60; // How many turns between respawn
-var SLEEPING_PERCENT = 0.1; // What is the chance for a mob to be spawned asleep
-var MOB_WANDER_PERCENT = 0.20; // What is the chance for a mob to be spawned wandering
+var SLEEPING_PERCENT = 0.2; // What is the chance for a mob to be spawned asleep
+var MOB_WANDER_PERCENT = 0.40; // What is the chance for a mob to be spawned wandering
 
 
 // NPC_AI:
@@ -232,13 +232,13 @@ var KITE_RANGE = 3.0;
 
 // ITEMS_AND_EQUIPMENT:
 // ************************************************************************************************
-var COMMON_ITEM_PERCENT = 70;
-var UNCOMMON_ITEM_PERCENT = 25; // 15 -> 25 (August 16 2018)
-var RARE_ITEM_PERCENT = 5;
+var COMMON_ITEM_PERCENT = 35;
+var UNCOMMON_ITEM_PERCENT = 50; // 15 -> 25 (August 16 2018)
+var RARE_ITEM_PERCENT = 15;
 var NUM_EQUIPMENT_SLOTS = 14;
-var SELL_ITEM_PERCENT = 0.25; // The percentage at which items are sold to merchants
+var SELL_ITEM_PERCENT = 0.50; // The percentage at which items are sold to merchants
 var GOOD_DROP_TABLE_LIST = ['Melee', 'Staves', 'Armor', 'Shields', 'Rings', 'Charms', 'GoodScrolls']; // Used for monster zoos, drop wall rooms, branch ends etc.
-var MAX_ENCHANTMENT = 5;
+var MAX_ENCHANTMENT = 10;
 var EQUIPMENT_SLOT_NAMES = ['shield', 'body', 'head', 'hands', 'feet', 'ring', 'ring', 'charm'];
 var LINEAR_MODDED_STATS = [
 	'damage', 
@@ -286,15 +286,15 @@ var CHARACTER_STATUS_FONT = {font: '14px ' + FONT_NAME, fill: '#ffffff', stroke:
 
 // GENERATION:
 // ************************************************************************************************
-var LOCKED_STAIRS_ROOM_CHANCE = 0.10;
-var STATIC_LEVEL_CHANCE = 0.10; // 0.10 chance to spawn a static level instead of a generated level
-var DOUBLE_GOLD_CHANCE = 0.10; // chance to spawn double max gold on a level
-var MAX_MONSTER_ZOO_NPCS = 9;
-var MAX_DROP_WALL_NPCS = 6;
-var VAULT_ROOM_PERCENT = 0.5; // Chance a vault will potentially spawn in place of a standard room
+var LOCKED_STAIRS_ROOM_CHANCE = 0.20;
+var STATIC_LEVEL_CHANCE = 0.20; // 0.10 chance to spawn a static level instead of a generated level
+var DOUBLE_GOLD_CHANCE = 0.20; // chance to spawn double max gold on a level
+var MAX_MONSTER_ZOO_NPCS = 18;
+var MAX_DROP_WALL_NPCS = 12;
+var VAULT_ROOM_PERCENT = 1.0; // Chance a vault will potentially spawn in place of a standard room
 
 // Floating Features:
-var FLOATING_FEATURE_PERCENT = 0.25;
+var FLOATING_FEATURE_PERCENT = 0.50;
 
 // Enchantment Table:
 var ENCHANTMENT_TABLE_MIN_LEVEL = 5;
@@ -309,25 +309,25 @@ var ALTER_MIN_LEVEL = 3;
 var SPAWN_ALTER_PERCENT = 4 / 28; // 4 Altars in 28 dungeon levels
 
 // Good Stuff (stuff that helps the player):
-var NUM_CHESTS_PER_LEVEL = 2;
-var NUM_GOLD_PER_LEVEL = 4;
-var MAX_RECOVERY_MUSHROOMS = 5;
-var NUM_FOUNTAINS_PER_LEVEL = 2;
-var ITEM_ENCHANTED_PERCENT = 0.25;
-var STANDARD_DROP_PERCENT = 0.25; // 0.30 What is the chance for an NPC to drop either gold or an item 0.25->0.40 Feb 19, 0.40->0.35Feb21
+var NUM_CHESTS_PER_LEVEL = 4;
+var NUM_GOLD_PER_LEVEL = 8;
+var MAX_RECOVERY_MUSHROOMS = 10;
+var NUM_FOUNTAINS_PER_LEVEL = 4;
+var ITEM_ENCHANTED_PERCENT = 0.50;
+var STANDARD_DROP_PERCENT = 0.50; // 0.30 What is the chance for an NPC to drop either gold or an item 0.25->0.40 Feb 19, 0.40->0.35Feb21
 var DROP_GOLD_PERCENT = 0.75; // What is the chance to drop gold, otherwise drop an item
 
 // Skill Trainer:
 var SKILL_TRAINER_MIN_LEVEL = 9;
-var SKILL_TRAINER_PERCENT = 0.10;
+var SKILL_TRAINER_PERCENT = 0.20;
 
 // Talent Trainer:
 var TALENT_TRAINER_MIN_LEVEL = 9;
-var TALENT_TRAINER_PERCENT = 0.10;
+var TALENT_TRAINER_PERCENT = 0.20;
 
 // PRIEST:
 var PRIEST_MIN_LEVEL = 13;
-var PRIEST_PERCENT = 0.25;
+var PRIEST_PERCENT = 0.50;
 
 // Double Monsters:
 var DOUBLE_MONSTER_MIN_LEVEL = 5;
@@ -335,75 +335,75 @@ var DOUBLE_MONSTER_CHANCE = 0.0;//0.10; // chance to spawn double max monsters o
 
 // Merchant:
 var MERCHANT_MIN_LEVEL = 5;
-var MERCHANT_SPAWN_PERCENT = 0.10;
+var MERCHANT_SPAWN_PERCENT = 0.20;
 
 // Fire Mushrooms:
-var MAX_FIRE_MUSHROOMS = 4;
+var MAX_FIRE_MUSHROOMS = 8;
 
 // Streamers:
 var STREAMER_MIN_LEVEL = 5;
-var SPAWN_STREAMER_PERCENT = 0.05;
-var DOUBLE_STREAMER_PERCENT = 0.25;
-var MIN_STREAMER_LENGTH = 24;
+var SPAWN_STREAMER_PERCENT = 0.10;
+var DOUBLE_STREAMER_PERCENT = 0.50;
+var MIN_STREAMER_LENGTH = 48;
 
 // Vines:
-var SPAWN_VINE_PERCENT = 0.50;
-var MAX_VINES = 4;
-var SUPER_VINE_PERCENT = 0.05;
+var SPAWN_VINE_PERCENT = 1.00;
+var MAX_VINES = 8;
+var SUPER_VINE_PERCENT = 0.10;
 
 // Ice:
-var MAX_ICE = 4;
-var SUPER_ICE_PERCENT = 0.05;
+var MAX_ICE = 8;
+var SUPER_ICE_PERCENT = 0.10;
 
 // Water:
-var SPAWN_WATER_PERCENT = 0.50;
-var MAX_WATER = 4;
-var SUPER_WATER_PERCENT = 0.05;
+var SPAWN_WATER_PERCENT = 1.00;
+var MAX_WATER = 8;
+var SUPER_WATER_PERCENT = 0.10;
 
 // Lava:
-var MAX_LAVA = 6;
-var SUPER_LAVA_PERCENT = 0.05;
+var MAX_LAVA = 12;
+var SUPER_LAVA_PERCENT = 0.10;
 
 // Teleport Trap:
 var TELEPORT_TRAP_MIN_LEVEL = 2;
-var SPAWN_TELEPORT_TRAP_PERCENT = 0.20;
-var MAX_TELEPORT_TRAPS = 2;
+var SPAWN_TELEPORT_TRAP_PERCENT = 0.40;
+var MAX_TELEPORT_TRAPS = 4;
 
 // Pit Traps:
 var PIT_TRAP_MIN_LEVEL = 3;
-var SPAWN_PIT_TRAP_PERCENT = 0.1;
-var MAX_PIT_TRAPS = 2;
+var SPAWN_PIT_TRAP_PERCENT = 0.2;
+var MAX_PIT_TRAPS = 4;
 
 // Bear Traps:
-var SPAWN_BEAR_TRAPS_PERCENT = 0.25;
-var MAX_BEAR_TRAPS = 10;
+var SPAWN_BEAR_TRAPS_PERCENT = 0.50;
+var MAX_BEAR_TRAPS = 20;
 
 // Fire Traps:
-var SPAWN_FIRE_VENTS_PERCENT = 0.25;
-var MAX_FIRE_VENTS = 10;
+var SPAWN_FIRE_VENTS_PERCENT = 0.50;
+var MAX_FIRE_VENTS = 20;
 
 // Spike Traps:
-var SPAWN_SPIKE_TRAPS_PERCENT = 0.25;
-var MAX_SPIKE_TRAPS = 10;
+var SPAWN_SPIKE_TRAPS_PERCENT = 0.50;
+var MAX_SPIKE_TRAPS = 20;
 
 // Fire Pots:
-var SPAWN_FIRE_POTS_PERCENT = 0.25;
-var MAX_FIRE_POTS = 10;
+var SPAWN_FIRE_POTS_PERCENT = 0.50;
+var MAX_FIRE_POTS = 20;
 
 // Gas Barrels:
-var SPAWN_GAS_POTS_PERCENT = 0.25;
-var MAX_GAS_POTS = 10;
+var SPAWN_GAS_POTS_PERCENT = 0.50;
+var MAX_GAS_POTS = 20;
 
 // Gas Vents:
-var SPAWN_GAS_VENTS_PERCENT = 0.5;
-var MAX_GAS_VENTS = 5;
+var SPAWN_GAS_VENTS_PERCENT = 1.0;
+var MAX_GAS_VENTS = 10;
 
 // Camp fires:
-var NUM_CAMP_FIRES = 2;
+var NUM_CAMP_FIRES = 4;
 
 // Elites:
 var MIN_ELITE_LEVEL = 4;
-var NPC_ELITE_CHANCE = 0.05;
+var NPC_ELITE_CHANCE = 0.10;
 
 // MECHANICS:
 // ************************************************************************************************
@@ -428,15 +428,15 @@ var MAX_PLAYER_SLEEP_TIME = 10;
 var MP_REGEN_TIME = 100; // How many turns to regenerate 0->max hp or ep?
 var HP_REGEN_TIME = 200;
 var MIN_HP_REGEN_TIME = 5;
-var CRIT_MULTIPLIER = 1.5; // How much are critical hits multiplied by
+var CRIT_MULTIPLIER = 1.0; // How much are critical hits multiplied by
 var INVENTORY_SIZE = 15; // Number of slots in character inventories
 var SPREAD_DAMAGE_MOD = 0.9;
 var TIMED_GATE_TIME = 200; 
 var CORRODE_PERCENT = 0.5;
 var EXTENDED_WAIT_TURNS = 200;
 var MIN_MOVE_TIME = 50;
-var CRITICAL_PERCENT = 0.05;
-var TELEPORT_PER_TURN_PERCENT = 0.3;
+var CRITICAL_PERCENT = 0.10;
+var TELEPORT_PER_TURN_PERCENT = 0.6;
 var MOVE_TIME = [100, 100, 50]; // SLOW, NORMAL, FAST
 var SKELETON_REVIVE_TIME = 80;
 var COLD_TIME = 10;
