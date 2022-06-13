@@ -122,7 +122,7 @@ loader.create = function() {
     game.load.spritesheet('BigSlot', 'Rogue Fable III_files/assets/images/BigSlot.png', 24, 24);
 
     // STATIC_LEVELS_JSON:
-    game.load.json('TestLevel', 'Rogue Fable III_filesassets/maps/StaticLevels/TestLevel.json');
+    game.load.json('TestLevel', 'Rogue Fable III_files/assets/maps/StaticLevels/TestLevel.json');
 
     // THE_UPPER_DUNGEON:
     game.load.json('TheUpperDungeon-01', 'Rogue Fable III_files/assets/maps/StaticLevels/TheUpperDungeon-01.json');
