@@ -638,7 +638,10 @@ gs.createZoneConnections = function () {
 		
 		// TIER_III => TIER_IV:
 		{fromZoneName: 'TheDarkTemple',		fromZoneLevel: 4, toZoneName: 'VaultOfYendor',		toZoneLevel: 1},
-		{fromZoneName: 'TheCrypt',			fromZoneLevel: 4, toZoneName: 'VaultOfYendor',		toZoneLevel: 1}
+		{fromZoneName: 'TheCrypt',			fromZoneLevel: 4, toZoneName: 'VaultOfYendor',		toZoneLevel: 1},
+		
+		// Endless
+		{fromZoneName: 'VaultOfYendor',			fromZoneLevel: 4, toZoneName: 'TheUpperDungeon',		toZoneLevel: 1}
 	];
 	
 	// Verify:
