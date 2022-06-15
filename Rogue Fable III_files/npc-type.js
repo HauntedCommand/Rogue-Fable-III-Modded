@@ -35,19 +35,20 @@ gs.createNPCTypes = function () {
 		
 		RatNest: {
 			abilityTypes: [
-				{typeName: 'SpawnNPC', stats: {numSpawned: 2, coolDown: 10, npcTypeName: 'Rat'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 3, coolDown: 8, npcTypeName: 'Rat'}}
 			],
-			moveSpeed: 'NONE',
+			moveSpeed: 'SLOW',
 			hitPointType: 'MHIGH',
 			maxMp: 5,
 			
 			isUnstableImmune: true,
 			neverSleep: true,
 			neverRespawn: true,
-			neverRun: true,
+			neverRun: false,
 			noBlood: true,
-			noRegen: true,
+			noRegen: false,
 			neverSpawnInZoo: true,
+			isKiter: true,
 		},
 		
 		GoblinWarrior: {
@@ -79,8 +80,8 @@ gs.createNPCTypes = function () {
 		
 		GoblinFireMage: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 5, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 10, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 8, mana: 0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -91,7 +92,7 @@ gs.createNPCTypes = function () {
 		
 		GoblinStormMage: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 5, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -111,8 +112,8 @@ gs.createNPCTypes = function () {
 		
 		GoblinShaman: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 5, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
-				{typeName: 'Heal', stats: {coolDown: 6, healPercent: 0.25}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
+				{typeName: 'Heal', stats: {coolDown: 3, healPercent: 0.50}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -137,7 +138,7 @@ gs.createNPCTypes = function () {
 		TheRatPiper: {
 			abilityTypes: [
 				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart'}},
-				{typeName: 'SummonMonsters', stats: {npcTypeName: 'Rat', num: 4, coolDown: 10}},
+				{typeName: 'SummonMonsters', stats: {npcTypeName: 'Rat', num: 6, coolDown: 7}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'HIGH',
@@ -149,7 +150,7 @@ gs.createNPCTypes = function () {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MHIGH'}},
 			],
-			moveSpeed: 'SLOW',
+			moveSpeed: 'MEDIUM',
 			hitPointType: 'MHIGH',
 			updateTurn: this.npcUpdateTurn.Regenerate,
 			resistance: {Fire: -1},
@@ -168,7 +169,7 @@ gs.createNPCTypes = function () {
 		
 		WolfKennel:	{
 			abilityTypes: [
-				{typeName: 'SpawnNPC', stats: {numSpawned: 2, coolDown: 8, npcTypeName: 'Wolf'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 4, coolDown: 7, npcTypeName: 'Wolf'}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MEDIUM',
@@ -178,7 +179,7 @@ gs.createNPCTypes = function () {
 			noBlood: true,
 			neverRun: true,
 			neverSpawnInZoo: true,
-			noRegen: true,
+			noRegen: false,
 			
 		},
 		
@@ -192,7 +193,7 @@ gs.createNPCTypes = function () {
 		
 		OrcArcher: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 6.0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 7.0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -202,7 +203,7 @@ gs.createNPCTypes = function () {
 		Ogre: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MHIGH'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 50, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'HIGH',
@@ -211,8 +212,8 @@ gs.createNPCTypes = function () {
 		
 		OgreShaman: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 5, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
-				{typeName: 'Heal', stats: {coolDown: 6, healPercent: 0.5}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
+				{typeName: 'Heal', stats: {coolDown: 3, healPercent: 0.75}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'MHIGH',
@@ -222,9 +223,9 @@ gs.createNPCTypes = function () {
 		
 		OrcFireMage: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 10, mana: 0}},
-				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 20, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 5, mana: 0}},
+				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 10, mana: 0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -234,8 +235,8 @@ gs.createNPCTypes = function () {
 		
 		OrcStormMage: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
-				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 8, mana: 0}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
+				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 4, mana: 0}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -245,9 +246,9 @@ gs.createNPCTypes = function () {
 		
 		OrcPriest: {
 			abilityTypes: [
-				{typeName: 'Smite', stats: {damageType: 'HIGH', coolDown: 4}},
-				{typeName: 'Heal', stats: {coolDown: 6, healPercent: 0.5}},
-				{typeName: 'Haste', stats: {coolDown: 10}},
+				{typeName: 'Smite', stats: {damageType: 'HIGH', coolDown: 2}},
+				{typeName: 'Heal', stats: {coolDown: 3, healPercent: 0.75}},
+				{typeName: 'Haste', stats: {coolDown: 5}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -282,8 +283,8 @@ gs.createNPCTypes = function () {
 		
 		OrcSummoner: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'MagicMissile', shootEffect: 'MagicShoot'}},
-				{typeName: 'SummonMonsters', stats: {npcTypeName: 'SpectralBlade', num: 4, coolDown: 20}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'MagicMissile', shootEffect: 'MagicShoot'}},
+				{typeName: 'SummonMonsters', stats: {npcTypeName: 'SpectralBlade', num: 6, coolDown: 10}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -313,7 +314,7 @@ gs.createNPCTypes = function () {
 			niceName: "Mon'Racar The Orc King",
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MHIGH'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 25, mana: 0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'HIGH',
@@ -326,7 +327,7 @@ gs.createNPCTypes = function () {
 		DarkElfWarden: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'SealDoors', stats: {coolDown: 40}},
+				{typeName: 'SealDoors', stats: {coolDown: 20}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',	
@@ -334,8 +335,8 @@ gs.createNPCTypes = function () {
 		
 		DarkElfSentinel: {
 			abilityTypes: [
-				{typeName: 'ProjectileKite', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 7.0}},
-				{typeName: 'WatchPlayer', stats: {coolDown: 20}},
+				{typeName: 'ProjectileKite', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 8.0}},
+				{typeName: 'WatchPlayer', stats: {coolDown: 10}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -344,9 +345,9 @@ gs.createNPCTypes = function () {
 		
 		DarkElfPyromancer: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'FireStorm', stats: {damageType: 'HIGH', coolDown: 20, mana: 0}},
-				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 20, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'FireStorm', stats: {damageType: 'HIGH', coolDown: 10, mana: 0}},
+				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 10, mana: 0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -356,8 +357,8 @@ gs.createNPCTypes = function () {
 		
 		DarkElfStormologist: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
-				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 8, mana: 0}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
+				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 4, mana: 0}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -367,9 +368,9 @@ gs.createNPCTypes = function () {
 		
 		DarkElfPriest: {
 			abilityTypes: [
-				{typeName: 'Smite', stats: {damageType: 'HIGH', coolDown: 3}},
-				{typeName: 'Heal', stats: {coolDown: 6, healPercent: 0.75}},
-				{typeName: 'Haste', stats: {coolDown: 10}},
+				{typeName: 'Smite', stats: {damageType: 'HIGH', coolDown: 1}},
+				{typeName: 'Heal', stats: {coolDown: 3, healPercent: 0.90}},
+				{typeName: 'Haste', stats: {coolDown: 5}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -378,8 +379,8 @@ gs.createNPCTypes = function () {
 		
 		DarkElfSummoner: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, projectileTypeName: 'MagicMissile', shootEffect: 'MagicShoot'}},
-				{typeName: 'SummonMonsters', stats: {npcTypeName: 'GreaterSpectralBlade', num: 4, coolDown: 20}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 1, projectileTypeName: 'MagicMissile', shootEffect: 'MagicShoot'}},
+				{typeName: 'SummonMonsters', stats: {npcTypeName: 'GreaterSpectralBlade', num: 6, coolDown: 10}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -388,8 +389,8 @@ gs.createNPCTypes = function () {
 		
 		EvilEye: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, projectileTypeName: 'MagicMissile', shootEffect: 'MagicShoot'}},
-				{typeName: 'NPCConfusion', stats: {coolDown: 20}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 1, projectileTypeName: 'MagicMissile', shootEffect: 'MagicShoot'}},
+				{typeName: 'NPCConfusion', stats: {coolDown: 10}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -413,7 +414,7 @@ gs.createNPCTypes = function () {
 		DrachnidWarrior: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'SpiderWeb',	stats: {coolDown: 100, range: 5.0}}
+				{typeName: 'SpiderWeb',	stats: {coolDown: 50, range: 7.0}}
 			],
 			moveSpeed: 'FAST',
 			hitPointType: 'MEDIUM',
@@ -421,8 +422,8 @@ gs.createNPCTypes = function () {
 		
 		DrachnidArcher: {
 			abilityTypes: [
-				{typeName: 'ProjectileKite', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 7.0}},
-				{typeName: 'SpiderWeb',	stats: {coolDown: 100, range: 5.0}}
+				{typeName: 'ProjectileKite', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 10.0}},
+				{typeName: 'SpiderWeb',	stats: {coolDown: 50, range: 7.0}}
 			],
 			moveSpeed: 'FAST',
 			hitPointType: 'MEDIUM',
@@ -432,8 +433,8 @@ gs.createNPCTypes = function () {
 		FleshGolem: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'Constrict', stats: {coolDown: 10}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Constrict', stats: {coolDown: 5}},
+				{typeName: 'Berserk', stats: {coolDown: 30, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'HIGH',
@@ -454,7 +455,7 @@ gs.createNPCTypes = function () {
 		CrystalGolem: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 30, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'MHIGH',
@@ -469,14 +470,13 @@ gs.createNPCTypes = function () {
 		Succubus: {
 			abilityTypes: [
 				{typeName: 'VampireAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'NPCCharm', stats: {coolDown: 20}},
+				{typeName: 'NPCCharm', stats: {coolDown: 10}},
 				
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
 		},
 		
-		/*
 		Demonologist: {
 			abilityTypes: [
 				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'MagicMissile'}},
@@ -489,7 +489,6 @@ gs.createNPCTypes = function () {
 			isKiter: true,
 		},
 		
-		*/
 		
 		
 		// THE_SUNLESS_DESERT:
@@ -521,7 +520,7 @@ gs.createNPCTypes = function () {
 			hitPointType: 'MEDIUM',
 			neverWander: true,
 			startHidden: true,
-			ambushDistance: 3,
+			ambushDistance: 2,
 			neverSpawnInZoo: true,
 			neverRespondToShout: true,
 		},
@@ -536,8 +535,8 @@ gs.createNPCTypes = function () {
 		
 		SunFlower: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, range: LOS_DISTANCE, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 20, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, range: LOS_DISTANCE, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 10, mana: 0}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MHIGH',
@@ -560,7 +559,7 @@ gs.createNPCTypes = function () {
 		Mummy: {
 			abilityTypes: [
 				{typeName: 'DrainingAttack', stats: {damageType: 'MHIGH'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 50, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'HIGH',
@@ -570,9 +569,9 @@ gs.createNPCTypes = function () {
 		
 		MummyPriest: {
 			abilityTypes: [
-				{typeName: 'Smite', stats: {damageType: 'HIGH', coolDown: 4}},
-				{typeName: 'Heal', stats: {coolDown: 6, healPercent: 0.5}},
-				{typeName: 'Haste', stats: {coolDown: 10}},
+				{typeName: 'Smite', stats: {damageType: 'HIGH', coolDown: 2}},
+				{typeName: 'Heal', stats: {coolDown: 3, healPercent: 0.75}},
+				{typeName: 'Haste', stats: {coolDown: 5}},
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'MEDIUM',
@@ -583,9 +582,9 @@ gs.createNPCTypes = function () {
 		
 		CylomarTheAncientPyromancer: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'FireStorm', stats: {damageType: 'HIGH', coolDown: 20, mana: 0}},
-				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 20, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'FireStorm', stats: {damageType: 'HIGH', coolDown: 10, mana: 0}},
+				{typeName: 'WallOfFire', stats: {damageType: 'MLOW', coolDown: 10, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'MEDIUM',
@@ -607,7 +606,7 @@ gs.createNPCTypes = function () {
 		Spider: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'SpiderWeb',	stats: {coolDown: 100}}
+				{typeName: 'SpiderWeb',	stats: {coolDown: 50}}
 			],
 			moveSpeed: 'MEDIUM',
 			maxHp: 15, // hitPointType: 'MEDIUM', 20
@@ -616,18 +615,19 @@ gs.createNPCTypes = function () {
 		
 		SpiderNest:	{
 			abilityTypes: [
-				{typeName: 'SpawnNPC', stats: {numSpawned: 1, coolDown: 8, npcTypeName: 'Spider'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 2, coolDown: 6, npcTypeName: 'Spider'}}
 			],
-			moveSpeed: 'NONE',
+			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
 			maxMp: 5,
 			isUnstableImmune: true,
 			neverSleep: true,
-			neverRun: true,
+			neverRun: false,
 			noBlood: true,
 			neverRespawn: true,
 			neverSpawnInZoo: true,
-			noRegen: true,
+			noRegen: false,
+			isKiter: true,
 			
 		},
 		
@@ -642,7 +642,7 @@ gs.createNPCTypes = function () {
 		
 		CentaurArcher: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart' , range: 6.0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart' , range: 7.0}}
 			],
 			moveSpeed: 'FAST',
 			maxHp: 16, // hitPointType: 'MEDIUM', 21
@@ -670,7 +670,7 @@ gs.createNPCTypes = function () {
 		TheQueenSpider: {
 			abilityTypes: [
 				{typeName: 'PoisonAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'SpawnNPC', stats: {numSpawned: 1, coolDown: 6, mana: 1, npcTypeName: 'SpiderEgg'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 3, coolDown: 4, mana: 1, npcTypeName: 'SpiderEgg'}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'HIGH',
@@ -753,7 +753,7 @@ gs.createNPCTypes = function () {
 		
 		ElectricEel: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 3, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 1, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
 			],
 			resistance: {Shock: 1},
 			moveSpeed: 'MEDIUM',
@@ -792,7 +792,7 @@ gs.createNPCTypes = function () {
 		KasicTheMosquitoPrince: {
 			abilityTypes: [
 				{typeName: 'VampireAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'LifeSpike', stats: {damageType: 'LOW', mana: 0, coolDown: 10}}
+				{typeName: 'LifeSpike', stats: {damageType: 'LOW', mana: 0, coolDown: 5}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -846,7 +846,7 @@ gs.createNPCTypes = function () {
 		
 		ClockworkArcher: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 6.0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 7.0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -859,7 +859,7 @@ gs.createNPCTypes = function () {
 		
 		ClockworkFactory: {
 			abilityTypes: [
-				{typeName: 'SpawnNPC', stats: {numSpawned: 3, coolDown: 10, npcTypeName: 'ClockworkRat'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 6, coolDown: 5, npcTypeName: 'ClockworkRat'}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MHIGH',
@@ -877,7 +877,7 @@ gs.createNPCTypes = function () {
 		
 		GoblinBomber: {
 			abilityTypes: [
-				{typeName: 'ThrowBomb', stats: {damageType: 'HIGH', coolDown: 4, range: 5}}
+				{typeName: 'ThrowBomb', stats: {damageType: 'HIGH', coolDown: 2, range: 6}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -886,8 +886,8 @@ gs.createNPCTypes = function () {
 		
 		ClockworkPyro: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 5, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'ProjectileAttack', stats: {coolDown: 10, projectileTypeName: 'Oil'}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'ProjectileAttack', stats: {coolDown: 5, projectileTypeName: 'Oil'}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -925,8 +925,8 @@ gs.createNPCTypes = function () {
 			
 		FireImp: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 4, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 10, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 2, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 5, mana: 0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -940,8 +940,8 @@ gs.createNPCTypes = function () {
 		
 		StormImp: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 4, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
-				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 10, mana: 0}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 2, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
+				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 5, mana: 0}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -955,8 +955,8 @@ gs.createNPCTypes = function () {
 		
 		IceImp: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 4, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
-				{typeName: 'SummonIceBomb', stats: {damageType: 'HIGH', coolDown: 10}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', coolDown: 2, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
+				{typeName: 'SummonIceBomb', stats: {damageType: 'HIGH', coolDown: 5}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -970,7 +970,7 @@ gs.createNPCTypes = function () {
 		StoneGolem: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MHIGH'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 40, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'HIGH',
@@ -983,8 +983,8 @@ gs.createNPCTypes = function () {
 		
 		FireStaffTurret: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 5, range: LOS_DISTANCE, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 10, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, range: LOS_DISTANCE, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 5, mana: 0}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'HIGH',
@@ -1001,9 +1001,9 @@ gs.createNPCTypes = function () {
 		
 		StormStatue: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, range: LOS_DISTANCE, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
-				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 8, range: LOS_DISTANCE, mana: 0}},
-				{typeName: 'Buffet', stats: {coolDown: 10}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, range: LOS_DISTANCE, projectileTypeName: 'Spark', shootEffect: 'ElectricShoot'}},
+				{typeName: 'LightningBolt',	stats: {damageType: 'MHIGH', coolDown: 4, range: LOS_DISTANCE, mana: 0}},
+				{typeName: 'Buffet', stats: {coolDown: 5}},
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MHIGH',
@@ -1032,7 +1032,7 @@ gs.createNPCTypes = function () {
 		
 		RottingCorpse: {
 			abilityTypes: [
-				{typeName: 'SpawnNPC', stats: {numSpawned: 3, coolDown: 5, npcTypeName: 'Maggot'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 5, coolDown: 4, npcTypeName: 'Maggot'}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MHIGH',
@@ -1064,7 +1064,7 @@ gs.createNPCTypes = function () {
 		
 		SkeletonArcher: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 7.0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MLOW', projectileTypeName: 'Dart', range: 8.0}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -1080,9 +1080,9 @@ gs.createNPCTypes = function () {
 
 		Necromancer: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'PoisonArrow', shootEffect: 'ToxicShoot'}},
-				{typeName: 'NPCPoisonCloud', stats: {damageType: 'MLOW', coolDown: 10}},
-				{typeName: 'ReviveSkeleton', stats: {coolDown: 10}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 2, projectileTypeName: 'PoisonArrow', shootEffect: 'ToxicShoot'}},
+				{typeName: 'NPCPoisonCloud', stats: {damageType: 'MLOW', coolDown: 5}},
+				{typeName: 'ReviveSkeleton', stats: {coolDown: 5}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -1093,7 +1093,7 @@ gs.createNPCTypes = function () {
 		ZombieBloat: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MHIGH'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 40, mana: 0}}
 			],
 			onDeath: {typeName: 'Bloat', stats: {damageType: 'MLOW'}},
 			moveSpeed: 'SLOW',
@@ -1123,13 +1123,13 @@ gs.createNPCTypes = function () {
 		TheLichKing: {
 			abilityTypes: [
 				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', projectileTypeName: 'PoisonArrow', shootEffect: 'ToxicShoot'}},
-				{typeName: 'SummonMonsters', stats: {coolDown: 4, num: 1, npcTypeName: 'SkeletonWarrior'}}
+				{typeName: 'SummonMonsters', stats: {coolDown: 3, num: 2, npcTypeName: 'SkeletonWarrior'}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'HIGH',
 			isKiter: true,
 			isUnique: true,
-			noRegen: true,
+			noRegen: false,
 			neverRun: true,
 			resistance: {Toxic: 1},
 			effectImmune: ['InfectiousDisease']
@@ -1149,7 +1149,7 @@ gs.createNPCTypes = function () {
 		BoaConstrictor: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MEDIUM'}},
-				{typeName: 'Constrict', stats: {coolDown: 10}}
+				{typeName: 'Constrict', stats: {coolDown: 5}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -1182,7 +1182,7 @@ gs.createNPCTypes = function () {
 		
 		TentacleSpitter: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', range: LOS_DISTANCE, coolDown: 3, projectileTypeName: 'Acid'}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MEDIUM', range: LOS_DISTANCE, coolDown: 1, projectileTypeName: 'Acid'}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -1227,8 +1227,8 @@ gs.createNPCTypes = function () {
 		
 		ToxicStatue: {
 			abilityTypes: [
-				{typeName: 'PoisonCloudBolt', stats: {damageType: 'MEDIUM', coolDown: 5}},
-				{typeName: 'WallOfPoisonGas', stats: {damageType: 'MEDIUM', coolDown: 10}},
+				{typeName: 'PoisonCloudBolt', stats: {damageType: 'MEDIUM', coolDown: 2}},
+				{typeName: 'WallOfPoisonGas', stats: {damageType: 'MEDIUM', coolDown: 5}},
 				
 			],
 			moveSpeed: 'NONE',
@@ -1256,7 +1256,7 @@ gs.createNPCTypes = function () {
 		
 		DireWolfKennel:	{
 			abilityTypes: [
-				{typeName: 'SpawnNPC', stats: {numSpawned: 3, coolDown: 8, npcTypeName: 'DireWolf'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 4, coolDown: 6, npcTypeName: 'DireWolf'}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MEDIUM',
@@ -1292,8 +1292,8 @@ gs.createNPCTypes = function () {
 		
 		IceStatue: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', range: LOS_DISTANCE, coolDown: 3, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
-				{typeName: 'SummonIceBomb', stats: {damageType: 'HIGH', coolDown: 15}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', range: LOS_DISTANCE, coolDown: 1, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
+				{typeName: 'SummonIceBomb', stats: {damageType: 'HIGH', coolDown: 7}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MHIGH',
@@ -1309,7 +1309,7 @@ gs.createNPCTypes = function () {
 		PolarBear: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MHIGH'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 30, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'HIGH',
@@ -1319,8 +1319,8 @@ gs.createNPCTypes = function () {
 
 		IceElemental: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', range: ABILITY_RANGE, coolDown: 3, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
-				{typeName: 'SummonIceBomb', stats: {damageType: 'HIGH', coolDown: 15}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', range: ABILITY_RANGE, coolDown: 1, projectileTypeName: 'IceArrow', shootEffect: 'ColdShoot'}},
+				{typeName: 'SummonIceBomb', stats: {damageType: 'HIGH', coolDown: 7}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -1345,9 +1345,9 @@ gs.createNPCTypes = function () {
 		
 		FireBatNest: {
 			abilityTypes: [
-				{typeName: 'SpawnNPC', stats: {numSpawned: 3, coolDown: 8, npcTypeName: 'FireBat'}}
+				{typeName: 'SpawnNPC', stats: {numSpawned: 4, coolDown: 6, npcTypeName: 'FireBat'}}
 			],
-			moveSpeed: 'NONE',
+			moveSpeed: 'FAST',
 			hitPointType: 'MEDIUM',
 			maxMp: 5,
 			isUnstableImmune: true,
@@ -1356,13 +1356,14 @@ gs.createNPCTypes = function () {
 			neverRun: true,
 			neverSpawnInZoo: true,
 			noBlood: true,
-			noRegen: true,
+			noRegen: false,
+			isKiter: true,
 			
 		},
 		
 		FireLizard: {
 			abilityTypes: [
-				{typeName: 'FlamingCloudBolt', stats: {damageType: 'MLOW', coolDown: 5}},
+				{typeName: 'FlamingCloudBolt', stats: {damageType: 'MLOW', coolDown: 2}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -1373,7 +1374,7 @@ gs.createNPCTypes = function () {
 		
 		LavaEel: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', range: LOS_DISTANCE, projectileTypeName: 'FireArrow', coolDown: 3, shootEffect: 'FireShoot'}},
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', range: LOS_DISTANCE, projectileTypeName: 'FireArrow', coolDown: 1, shootEffect: 'FireShoot'}},
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MLOW',
@@ -1393,8 +1394,8 @@ gs.createNPCTypes = function () {
 		
 		FireStatue: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, range: LOS_DISTANCE, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 10, mana: 0}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 1, range: LOS_DISTANCE, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'OrbOfFire', stats: {damageType: 'HIGH', coolDown: 5, mana: 0}}
 			],
 			moveSpeed: 'NONE',
 			hitPointType: 'MHIGH',
@@ -1408,8 +1409,8 @@ gs.createNPCTypes = function () {
 		
 		FireElemental: {
 			abilityTypes: [
-				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 3, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
-				{typeName: 'SpawnNPC', stats: {coolDown: 8, numSpawned: 1, mana: 0, npcTypeName: 'FireBall', damageType: 'HIGH'}}
+				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 1, projectileTypeName: 'FireArrow', shootEffect: 'FireShoot'}},
+				{typeName: 'SpawnNPC', stats: {coolDown: 5, numSpawned: 2, mana: 0, npcTypeName: 'FireBall', damageType: 'HIGH'}}
 			],
 			moveSpeed: 'MEDIUM',
 			hitPointType: 'MEDIUM',
@@ -1422,7 +1423,7 @@ gs.createNPCTypes = function () {
 		ObsidianGolem: {
 			abilityTypes: [
 				{typeName: 'MeleeAttack', stats: {damageType: 'MHIGH'}},
-				{typeName: 'Berserk', stats: {coolDown: 100, mana: 0}}
+				{typeName: 'Berserk', stats: {coolDown: 20, mana: 0}}
 			],
 			moveSpeed: 'SLOW',
 			hitPointType: 'HIGH',
