@@ -477,6 +477,7 @@ gs.createNPCTypes = function () {
 			hitPointType: 'MEDIUM',
 		},
 		
+		/**
 		Demonologist: {
 			abilityTypes: [
 				{typeName: 'ProjectileAttack', stats: {damageType: 'MHIGH', coolDown: 4, projectileTypeName: 'MagicMissile'}},
@@ -488,7 +489,7 @@ gs.createNPCTypes = function () {
 			hitPointType: 'MLOW',
 			isKiter: true,
 		},
-		
+		**/
 		
 		
 		// THE_SUNLESS_DESERT:
