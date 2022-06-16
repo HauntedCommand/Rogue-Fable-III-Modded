@@ -93,22 +93,22 @@ var MERCHANT_INVENTORY_HEIGHT = 10;
 // PLAYER_STARTING_STATS:
 // ************************************************************************************************
 var PLAYER_INITIAL_HP = {
-	Warrior: 24,
+	Warrior: 20,
 	Barbarian: 24,
-	Ranger: 24,
-	Rogue: 24,
-	FireMage: 24,
-	StormMage: 24,
-	IceMage: 24,
-	Necromancer: 24,
-	Enchanter: 24,
+	Ranger: 18,
+	Rogue: 18,
+	FireMage: 14,
+	StormMage: 14,
+	IceMage: 14,
+	Necromancer: 10,
+	Enchanter: 10,
 	
 };
 var PLAYER_INITIAL_MP = {
-	Warrior: 3,
-	Barbarian: 3,
-	Ranger: 3,
-	Rogue: 3,
+	Warrior: 1,
+	Barbarian: 0,
+	Ranger: 2,
+	Rogue: 2,
 	FireMage: 3,
 	StormMage: 3,
 	IceMage: 3,
@@ -117,26 +117,26 @@ var PLAYER_INITIAL_MP = {
 };
 
 var PLAYER_HP_PER_LEVEL = {
-	Warrior: 		PLAYER_INITIAL_HP.Warrior / 19,
-	Barbarian: 		PLAYER_INITIAL_HP.Barbarian / 19,
-	Ranger: 		PLAYER_INITIAL_HP.Ranger / 19,
-	Rogue: 			PLAYER_INITIAL_HP.Rogue / 19,
-	FireMage: 		PLAYER_INITIAL_HP.FireMage / 19,
-	StormMage: 		PLAYER_INITIAL_HP.StormMage / 19,
-	Necromancer: 	PLAYER_INITIAL_HP.Necromancer / 19,
-	IceMage:		PLAYER_INITIAL_HP.IceMage / 19,
-	Enchanter: 		PLAYER_INITIAL_HP.IceMage / 19,
+	Warrior: 		PLAYER_INITIAL_HP.Warrior / 10,
+	Barbarian: 		PLAYER_INITIAL_HP.Barbarian / 10,
+	Ranger: 		PLAYER_INITIAL_HP.Ranger / 10,
+	Rogue: 			PLAYER_INITIAL_HP.Rogue / 10,
+	FireMage: 		PLAYER_INITIAL_HP.FireMage / 10,
+	StormMage: 		PLAYER_INITIAL_HP.StormMage / 10,
+	Necromancer: 	PLAYER_INITIAL_HP.Necromancer / 10,
+	IceMage:		PLAYER_INITIAL_HP.IceMage / 10,
+	Enchanter: 		PLAYER_INITIAL_HP.IceMage / 10,
 };
 var PLAYER_MP_PER_LEVEL = {
 	Warrior: 		0,//PLAYER_INITIAL_MP.Warrior / 19,
 	Barbarian: 		0,//PLAYER_INITIAL_MP.Barbarian / 19,
 	Ranger: 		0,//PLAYER_INITIAL_MP.Ranger / 19,
 	Rogue: 			0,//PLAYER_INITIAL_MP.Rogue / 19,
-	FireMage: 		0,//PLAYER_INITIAL_MP.FireMage / 19,
-	StormMage: 		0,//PLAYER_INITIAL_MP.StormMage / 19,
-	Necromancer: 	0,//PLAYER_INITIAL_MP.Necromancer / 19,
-	IceMage:		0,
-	Enchanter:		0,
+	FireMage: 		1,//PLAYER_INITIAL_MP.FireMage / 19,
+	StormMage: 		1,//PLAYER_INITIAL_MP.StormMage / 19,
+	Necromancer: 	2,//PLAYER_INITIAL_MP.Necromancer / 19,
+	IceMage:		1,
+	Enchanter:		2,
 };
 
 // SKILL_BALANCE:
